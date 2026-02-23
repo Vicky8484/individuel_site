@@ -1,0 +1,97 @@
+.category-card {
+  background-color: #ffe7ef;
+  padding-block: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #683b4b;
+  border-radius: 20px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.category-card:hover {
+  background-color: #d6bbc4;
+  color: #542f3c;
+}
+
+.hero-box {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-shadow: 4px 5px 6px #432430;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  text-align: center;
+  color: #2b131f;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*mobil*/
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 5rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .category-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 10rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .category-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    border-top: #2b131f solid 2px;
+  }
+
+  .category-card {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .categorybox-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}

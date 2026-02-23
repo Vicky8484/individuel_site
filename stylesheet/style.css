@@ -1,0 +1,22 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-image: url(/background-img.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+html {
+  scrollbar-color: #ffe7ef #3c2b42;
+}

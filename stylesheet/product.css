@@ -1,0 +1,49 @@
+img {
+  border-radius: 20px;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+.product-display {
+  max-width: 1000px;
+  margin: 2rem;
+  background-color: #ffe7ef;
+  color: #683b4b;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 20px;
+}
+
+.button {
+  font-size: 2.5rem;
+  width: 90px;
+  height: 90px;
+  background-color: #e4e4e4;
+  text-decoration: none;
+  border: #683b4b solid 2px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #e6bbd2;
+}
+
+details {
+  padding-top: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .product-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+  }
+}
