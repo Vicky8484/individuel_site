@@ -52,3 +52,13 @@ h2 {
   background-color: #d6bbc4;
   color: #542f3c;
 }
+
+@media screen and (max-width: 800px) {
+  .productbox-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-bottom: 3rem;
+  }
+}
