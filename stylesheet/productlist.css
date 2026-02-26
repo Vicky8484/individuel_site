@@ -30,6 +30,7 @@ h2 {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 6;
+
   border-radius: 20px;
   padding: 1rem;
   background-color: #ffe7ef;
