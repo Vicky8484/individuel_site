@@ -35,10 +35,10 @@ function show(data) {
                 <details>
                     <summary>Read more</summary>
                     <br>
-                    <p>Full-zip front, stand-up collar, long sleeves, and ribbed (elasticated) waistband and cuffs to
-                        trap heat. Lightweight, durable with breathable materials. Designed with a
-                        comfortable, slightly relaxed fit to allow for ease of
-                        movement.</p>
+                    <p>Gender: ${data.gender}</p>
+                         <p>Article type: ${data.articletype}</p>
+                            <p>Usage type: ${data.usagetype}</p>
+                              <p>Production year: ${data.productionyear}</p>
                 </details>
             </div>
   `;
