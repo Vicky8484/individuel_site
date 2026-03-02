@@ -24,9 +24,9 @@ h4 {
   font-size: 2.5rem;
   width: 90px;
   height: 90px;
-  background-color: #e4e4e4;
   text-decoration: none;
-  border: #683b4b solid 2px;
+  border-left: #683b4b solid 1px;
+  border-right: #683b4b solid 1px;
   text-align: center;
 }
 

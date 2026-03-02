@@ -9,7 +9,8 @@ h2 {
 }
 
 .product-card img {
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   width: 100%;
 }
 
@@ -29,16 +30,20 @@ h2 {
 .product-card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 6;
-
+  grid-row: span 7;
   border-radius: 20px;
-  padding: 1rem;
+
   background-color: #ffe7ef;
   color: #683b4b;
   font-family: "Hammersmith One", sans-serif;
   font-weight: 200;
   font-style: normal;
   text-decoration: none;
+}
+
+.card-info {
+  padding: 1rem;
+  padding-top: 0;
 }
 
 .hide {
@@ -49,9 +54,19 @@ h2 {
   padding: 1rem;
 }
 
-.product-card:hover {
+article .button {
   background-color: #d6bbc4;
   color: #542f3c;
+  text-decoration: none;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #996e7c;
+  color: #391220;
 }
 
 @media screen and (max-width: 800px) {
