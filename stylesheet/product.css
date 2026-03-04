@@ -1,23 +1,10 @@
 img {
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 h4 {
   font-size: 1.4rem;
-}
-
-#productContainer {
-  max-width: 950px;
-  margin: 2rem;
-  background-color: #ffe7ef;
-  color: #683b4b;
-  font-family: "Hammersmith One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2rem;
-  padding: 1rem;
-  gap: 1rem;
-  border-radius: 20px;
 }
 
 .button {
@@ -38,13 +25,208 @@ details {
   padding-top: 1rem;
 }
 
+#morelike {
+  display: none;
+}
+
+/*Til 600px*/
+@media screen and (max-width: 600px) {
+  #productContainer {
+    max-width: 950px;
+    margin: 2rem;
+    background-color: #ffe7ef;
+    color: #683b4b;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    gap: 1rem;
+    border-radius: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .product-info {
+    padding: 1rem;
+    padding-top: 0;
+  }
+}
+
+/*Fra 600px*/
+@media screen and (min-width: 600px) {
+  #productContainer {
+    max-width: 950px;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    background-color: #ffe7ef;
+    color: #683b4b;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    gap: 1rem;
+    border-radius: 20px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+
+  .product-info {
+    padding: 1rem;
+    padding-top: 0;
+  }
+
+  details {
+    font-size: 0.8rem;
+    padding-top: 0;
+  }
+
+  summary {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 2rem;
+  }
+
+  .pris {
+    font-weight: 600;
+  }
+}
+
+/*Fra 800px*/
 @media screen and (min-width: 800px) {
+  #productContainer {
+    max-width: 950px;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    background-color: #ffe7ef;
+    color: #683b4b;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    gap: 1rem;
+    border-radius: 20px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+
+  .product-title {
+    font-size: 1.8rem;
+  }
+  .product-info {
+    padding: 1rem;
+    padding-top: 0;
+  }
+
+  details {
+    font-size: 1rem;
+    padding-top: 0;
+  }
+
+  summary {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 2.2rem;
+  }
+
+  .pris {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}
+
+/*Fra 850px*/
+@media screen and (min-width: 850px) {
+  #productContainer {
+    max-width: 950px;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+    background-color: #ffe7ef;
+    color: #683b4b;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    gap: 1rem;
+    border-radius: 20px;
+  }
+}
+
+/*Fra 1250px*/
+@media screen and (min-width: 1250px) {
   #productContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
+    background-color: #ffe7ef;
+    color: #683b4b;
+    margin: 2rem;
     gap: 1rem;
     border-radius: 20px;
-    margin: 2rem auto;
+    margin-left: 2rem;
+  }
+
+  .product-info {
+    padding: 1rem;
+    padding-top: 0;
+  }
+
+  .product-title {
+    font-size: 1.8rem;
+  }
+
+  .pris {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  summary {
+    font-size: 1.2rem;
+  }
+  details {
+    font-size: 0.9rem;
+  }
+
+  img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+  /*Fra 1500px*/
+@media screen and (min-width: 1500px) {
+  main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  }
+  /**************************************************************************/
+  #morelike {
+    display: block;
+    background-color: #683b4b;
+    overflow-y: scroll;
+    margin: 0;
   }
 }

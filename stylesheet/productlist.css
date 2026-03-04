@@ -1,28 +1,21 @@
-h2 {
-  text-align: center;
-  color: #2b131f;
-  font-family: "Hammersmith One", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 2rem;
-  padding: 2rem;
-}
-
+/*****Styling af card billeder*****/
 .product-card img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
 }
 
+/*****Styling af main box*****/
 .main-box {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
+/*****Grid layout for product cards*****/
 .productbox-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: auto;
   gap: 10px;
   margin-bottom: 3rem;
 }
@@ -30,7 +23,7 @@ h2 {
 .product-card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 7;
+  grid-row: span 9;
   border-radius: 20px;
 
   background-color: #ffe7ef;
@@ -40,28 +33,40 @@ h2 {
   font-style: normal;
   text-decoration: none;
 }
-
+/****Styling af card info, padding og tekst***/
 .card-info {
   padding: 1rem;
   padding-top: 0;
+  display: contents;
 }
 
-.hide {
-  color: #4b031c7a;
+.card-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.main-box {
-  padding: 1rem;
+.product-name {
+  font-size: 1.3rem;
 }
 
+.pris {
+  font-size: 1.2rem;
+}
+
+/*Styling af knap*/
 article .button {
   background-color: #d6bbc4;
   color: #542f3c;
   text-decoration: none;
-  width: 400px;
-  padding: 1rem;
+  padding-block: 1rem;
+
   border-radius: 15px;
   text-align: center;
+  display: block;
+
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .button:hover {
@@ -69,6 +74,38 @@ article .button {
   color: #391220;
 }
 
+/*Styling af badge for tilbud, udsolgt og på lager*/
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #ea580c;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge2 {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #0c13ea;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge3 {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #1eea0c;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/*Responsivt design for mindre skærme*/
 @media screen and (max-width: 800px) {
   .productbox-wrapper {
     display: grid;
@@ -76,5 +113,13 @@ article .button {
     grid-template-rows: auto;
     gap: 10px;
     margin-bottom: 3rem;
+  }
+
+  .product-name {
+    font-size: 1rem;
+  }
+
+  .pris {
+    font-size: 1.5rem;
   }
 }
