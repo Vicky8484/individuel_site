@@ -16,19 +16,17 @@ function showProducts(products) {
   products.forEach((product) => {
     listContainer.innerHTML += `
  <article class="product-card">
-                    <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="produkt billede">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}">
                     <div class="card-info">
-                    <h4>${product.productdisplayname}</h4>
-                    <br>
-                    <p>${product.brandname}</p>
-                    <br>
-                    <p>DKK ${product.price}</p>
-                    <br>
-                    <p class="hide">${product.discount}%</p>
-                    <br>
-                    <p class="hide">${product.soldout}</p>
-                    <br>
-                    <a class="button" href="product.html?id=${product.id}">Køb nu</a>
+                    <h4 class="product-name card-padding">${product.productdisplayname}</h4>
+                    <p class="card-padding">${product.brandname}</p>
+              
+                    <p class="pris card-padding">DKK ${product.price}</p>
+                    
+                  <h3 class="card-padding card ${product.discount > 0 ? "onSale" : ""}">${product.discount > 0 ? `<p class="badge">Tilbud ${product.discount}%</p>` : ""}</h3>
+<h3 class="card-padding">${product.soldout === 1 ? `<p class="badge2">Udsolgt</p>` : `<p class="badge3">På lager</p>`}</h3>
+
+                    <a class="button card-padding" href="product.html?id=${product.id}">${product.soldout > 0 ? "Tilføj til liste" : "Køb nu"}</a>
                     </div>
                 </article>
     `;

@@ -1,5 +1,3 @@
-console.log("hrnryr");
-
 const listURL = "https://kea-alt-del.dk/t7/api/categories";
 const listContainer = document.querySelector(".category-box");
 
