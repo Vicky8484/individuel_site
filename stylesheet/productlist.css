@@ -5,6 +5,43 @@
   width: 100%;
 }
 
+/*****Styling af sort knapper*****/
+.button-box {
+  display: flex;
+  gap: 10px;
+}
+
+.sortBtn {
+  background-color: #d6bbc4;
+  color: #542f3c;
+  padding-block: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.sortBtn2 {
+  background-color: #d6bbc4;
+  color: #542f3c;
+  padding-block: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.sortBtn:hover {
+  background-color: #bba0a9;
+  color: #542f3c;
+}
+
 /*****Styling af main box*****/
 .main-box {
   max-width: 1200px;

@@ -29,6 +29,37 @@ details {
   display: none;
 }
 
+/*Styling af badge for tilbud, udsolgt og på lager*/
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #ea580c;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge2 {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #0c13ea;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge3 {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #1eea0c;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 /*Til 600px*/
 @media screen and (max-width: 600px) {
   #productContainer {
