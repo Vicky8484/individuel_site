@@ -23,11 +23,13 @@ function show(data) {
                 <br>
                 <p class="pris">DKK ${data.price}</p>
                 <p>Color: ${data.basecolour}</p>
-                <p class="hide">Discount: ${data.discount}</p>
-                <p class="hide">Stock: ${data.soldout}</p>
+
+                <h3 class="card-padding card ${data.discount > 0 ? "onSale" : ""}">${data.discount > 0 ? `<p class="badge">Tilbud ${data.discount}%</p>` : ""}</h3>
+<h3 class="card-padding">${data.soldout === 1 ? `<p class="badge2">Udsolgt</p>` : `<p class="badge3">På lager</p>`}</h3>
+    
                 <br>
 
-                <a href="" class="button">🛒</a>
+                <a href="" class="button">${data.soldout === 1 ? "" : "🛒"}</a>
                 <a href="" class="button">❤️</a>
           
                 <details>
